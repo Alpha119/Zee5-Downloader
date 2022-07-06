@@ -54,7 +54,7 @@ async def zee5_capture(bot, update):
 
     logger.info(update.from_user.id)
     
-    if "zee5" in update.text:
+    if "mdisk" in update.text:
         try:
             w = update.text 
             req1 = requests.get("https://useraction.zee5.com/tokennd").json()
@@ -88,7 +88,7 @@ async def zee5_capture(bot, update):
             return
             
     else:
-        await update.reply_text("I can download from Zee5 links only! Use @UploadHEXbot for other links 😇", quote=True)
+        await update.reply_text("I can download from Mdisk links only! Use @UploadHEXbot for other links 😇", quote=True)
         return
     
     try:
